@@ -16,7 +16,8 @@ export class AppComponent {
   constructor(private myLibService: MyLibService) {}
 
   onClick(): void {
-    this.myLibService.getTestData()
-
+    this.myLibService.getTestData().subscribe(data => {
+      console.log(data)
+    })
   }
 }

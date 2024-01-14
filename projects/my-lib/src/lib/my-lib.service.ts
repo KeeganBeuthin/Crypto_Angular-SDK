@@ -16,7 +16,7 @@ export class MyLibService {
   }
 
   getTestData(): Observable<any> {
-    const endpoint = '/test'; 
-    return this.http.get(`${this.apiUrl}${endpoint}`);
+    const endpoint = '/api/test'; 
+    return this.http.get(`${endpoint}`);
   }
 }
